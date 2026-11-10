@@ -1,0 +1,124 @@
+{UTF-8}
+Angka Kematian Kasar  = A FUNCTION OF( )
+	~	
+	~		|
+
+Jumlah Penduduk  = A FUNCTION OF( Jumlah Sampah di TPS,Kelahiran,Kematian,Migrasi)
+	~	
+	~		|
+
+Jumlah Sampah di TPS  = A FUNCTION OF( Jumlah Penduduk,Jumlah Sampah yang diangkut ke TPA\
+		,Sampah diolah,Sampah Perorang)
+	~	
+	~		|
+
+Jumlah Sampah yang diangkut ke TPA  = A FUNCTION OF( Jumlah Sampah di TPS)
+	~	
+	~		|
+
+Kelahiran  = A FUNCTION OF( Jumlah Penduduk,Laju Pertumbuhan Penduduk)
+	~	
+	~		|
+
+Kematian  = A FUNCTION OF( Angka Kematian Kasar,Jumlah Penduduk)
+	~	
+	~		|
+
+Laju Migrasi Masuk  = A FUNCTION OF( )
+	~	
+	~		|
+
+Laju Pertumbuhan Penduduk  = A FUNCTION OF( )
+	~	
+	~		|
+
+Migrasi  = A FUNCTION OF( Jumlah Penduduk,Laju Migrasi Masuk)
+	~	
+	~		|
+
+Presentase Sampah Terolah  = A FUNCTION OF( )
+	~	
+	~		|
+
+Sampah diolah  = A FUNCTION OF( Jumlah Sampah di TPS,Presentase Sampah Terolah)
+	~	
+	~		|
+
+Sampah Perorang  = A FUNCTION OF( )
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$255-128-192,0,Arial|10|B|0-0-0|192-192-192|255-128-192|255-255-128|-1--1--1|96,96,100,0
+10,1,Angka Kematian Kasar,168,48,54,16,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,2,Kematian,328,115,33,9,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,3,Jumlah Penduduk,460,199,40,20,3,3,0,1,0,0,0,0,255-128-192,255-255-128,|0||0-0-0,0,0,0,0,0,0
+10,4,Kelahiran,330,266,33,9,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,5,Laju Pertumbuhan Penduduk,168,340,62,16,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,6,Laju Migrasi Masuk,384,407,42,16,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,7,Migrasi,486,311,25,9,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,8,Jumlah Sampah di TPS,721,201,40,20,3,3,0,1,0,0,0,0,255-128-192,0-0-0,|0||0-0-0,0,0,0,0,0,0
+10,9,Sampah Perorang,721,83,32,16,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,10,Sampah diolah,931,204,51,9,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,11,Jumlah Sampah yang diangkut ke TPA,728,351,73,16,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,12,Presentase Sampah Terolah,1013,302,56,16,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,13,1,2,1,0,43,0,2,64,0,-1--1--1,|10||0-0-0,1|(286,68)|
+1,14,2,3,1,0,0,0,0,64,0,-1--1--1,,1|(415,131)|
+1,15,3,2,1,0,0,0,0,64,0,-1--1--1,,1|(350,163)|
+1,16,5,4,1,0,45,0,2,64,0,-1--1--1,|10||0-0-0,1|(286,327)|
+1,17,6,7,1,0,43,0,2,64,0,-1--1--1,|10||0-0-0,1|(468,371)|
+1,18,4,3,1,0,43,0,2,64,0,-1--1--1,|10||0-0-0,1|(356,228)|
+1,19,3,4,1,0,43,0,2,64,0,-1--1--1,|10||0-0-0,1|(415,242)|
+1,20,3,7,1,0,45,0,2,64,0,-1--1--1,|10||0-0-0,1|(490,237)|
+1,21,7,3,1,0,43,0,2,64,0,-1--1--1,|10||0-0-0,1|(458,283)|
+1,22,3,8,1,0,43,0,2,64,0,-1--1--1,|10||0-0-0,1|(569,125)|
+1,23,8,3,1,0,0,0,0,64,0,-1--1--1,,1|(592,241)|
+1,24,11,8,1,0,0,0,0,64,0,-1--1--1,,1|(673,278)|
+1,25,8,11,1,0,43,0,2,64,0,-1--1--1,|10||0-0-0,1|(766,265)|
+1,26,9,8,1,0,45,0,2,64,0,-1--1--1,|10||0-0-0,1|(743,129)|
+1,27,8,10,1,0,0,0,0,64,0,-1--1--1,,1|(819,156)|
+1,28,10,8,1,0,0,0,0,64,0,-1--1--1,,1|(826,238)|
+1,29,12,10,1,0,43,0,2,64,0,-1--1--1,|10||0-0-0,1|(1022,246)|
+///---\\\
+:L<%^E!@
+9:Current
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:0,
+34:0,
+5:Jumlah Sampah di TPS
+24:0
+25:0
+26:0
+75:
+43:
